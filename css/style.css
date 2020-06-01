@@ -1,0 +1,331 @@
+@import url('../fontawesome/css/all.min.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    font-size: 15px;
+    line-height: 1.5;
+
+    --black-color: #333333;
+    --white-color: #ffffff;
+    --green-color: #61ce94;
+    --purple-color: #AA78B5;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--black-color);
+}
+
+
+/*                          global 
+*****************************************/
+.container {
+    width: 80%;
+    max-width: 960px;
+    margin: 0 auto;
+    /*overflow: hidden;*/
+}
+
+#showcase {
+    background: linear-gradient(#92FBC3, #308D59);
+    padding: 50px 0;
+}
+#page-header {
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+a,
+.link {
+    text-decoration: none;
+    transition: all .3s ease;
+    display: inline-block;
+}
+
+.button {
+    background: var(--green-color);
+    color: var(--white-color);
+    text-transform: capitalize;
+    padding: 10px 15px;
+}
+.button:hover {
+    background: var(--purple-color);
+}
+
+ul {
+    list-style: none;
+}
+
+
+/*                          header 
+*****************************************/
+header {
+    height: 150px;
+    background: linear-gradient(to right, var(--purple-color), var(--green-color));
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header > a {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2.75rem;
+    letter-spacing: 1px;
+    word-spacing: 15px;
+
+    background: -webkit-linear-gradient(0deg, #91f9c2, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 2px #33333338;
+}
+
+
+
+/*                          navbar 
+*****************************************/
+.navbar {
+    height: auto;
+    background: var(--black-color);
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.navbar a {
+    color: var(--white-color);
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin: 0;
+    padding: 12px 15px;
+}
+.navbar a:hover {
+    background: #0ECE68;
+}
+
+
+
+/*                          main-page 
+                            all-blogs 
+*****************************************/
+.main-page,
+.all-blogs {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.blog-box {
+    width: 30%;
+    background: var(--white-color);
+    padding: 15px;
+    margin: 1rem 0;
+    border-radius: 5px;
+}
+.blog-box img {
+    width: 100%;
+    display: block;
+    margin-bottom: 15px;
+    border-radius: 5px 5px 0 0;
+}
+.blog-box h3 {
+    text-transform: capitalize;
+}
+.blog-box h6 {
+    color: var(--green-color);
+}
+.blog-box p {
+    margin: 10px 0;
+}
+
+
+/*                          find-more 
+*****************************************/
+.find-more {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.find-more .button {
+    padding: .75rem 5rem;
+}
+
+
+
+/*                          about 
+*****************************************/
+.about {
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.about .img-box {
+    width: 400px;
+    border: 15px solid var(--purple-color);
+    border-top: none;
+    border-right: none;
+    padding: 0 0 50px 50px;
+    box-shadow: inset 8px -4px 7px 0px #8cf4bd;
+}
+.about .img-box img {
+    width: 250px;
+    display: block;
+    border: 8px solid #fff;
+}
+
+.about .description {
+    flex:1;
+    margin-left: 15px;
+    align-self: center;
+    color: var(--white-color);
+}
+.about .description h3 {
+    margin-bottom: 15px;
+}
+
+
+
+
+/*                          form 
+*****************************************/
+#form {
+    width: 80%;
+    max-width: 500px;
+    min-height: 300px;
+    margin: auto;
+    padding: 75px 50px;
+    background: var(--white-color);
+    border: 5px solid var(--purple-color);
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px 3px var(--green-color);
+
+    display: flex;
+    flex-flow: column wrap;
+}
+
+#form input,
+#form textarea {
+    text-align: center;
+    padding: 12px 15px;
+    border-radius: 25px;
+    margin-bottom: 15px;
+    outline: none;
+    border: 1px solid var(--green-color);
+    transition: .3s ease;
+}
+#form textarea {
+    height: 80px;
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+#form input:focus,
+#form textarea:focus {
+    border-color: var(--purple-color);
+}
+
+#form .button {
+    cursor: pointer;
+    font-size: 1.15rem;
+    border: 0;
+    width: 50%;
+    margin: 15px auto;
+}
+
+
+/*                          blogspot 
+*****************************************/
+.article {
+    background: var(--white-color);
+    padding: 15px;
+    border: 5px solid var(--purple-color);
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 6px 3px var(--green-color);
+}
+.article img {
+    width: 100%;
+    height: 350px;
+    display: block;
+    margin-bottom: 25px;
+    border-radius: 5px 5px 0 0;
+}
+.article h3 {
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+.article h6 {
+    color: var(--green-color);
+    margin-bottom: 15px;
+}
+.article p {
+    margin: 10px 0;
+}
+.article blockquote {
+    text-align: center;
+    font-size: 1.2rem;
+    font-style: italic;
+    margin: 25px 50px;
+    color: rgba(0,0,0,0.6);
+}
+
+
+
+/*                          footer 
+*****************************************/
+footer {
+    background: var(--black-color);
+    color: #fff;
+    width: 100%;
+    height: auto;
+    min-height: 50px;
+    padding: 25px 0;
+}
+
+footer > .container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright {
+    flex: 2;
+}
+.copyright i {
+    color: crimson;
+}
+.copyright a {
+    color: var(--green-color);
+}
+
+.social {
+    flex:1;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.social a {
+    margin-left: 10px;
+}
+.social a i {
+    display: block;
+    background: #000;
+    color: var(--white-color);
+    padding: 8px 8px;
+    border-radius: 50%;
+    transition: .3s ease;
+}
+.social a:hover i {
+    background: var(--purple-color);
+}
